@@ -1,9 +1,10 @@
 {
-  "name": "prismarine-template",
+  "name": "minecraft-menu-gui",
   "version": "1.0.0",
   "description": "A template repository to make it easy to create new prismarine repo",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js 8080 dev",
     "test": "jest --verbose",
     "pretest": "npm run lint",
     "lint": "standard",
@@ -24,8 +25,34 @@
   },
   "homepage": "https://github.com/PrismarineJS/prismarine-template#readme",
   "devDependencies": {
+    "assert": "^2.0.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "clean-webpack-plugin": "^3.0.0",
+    "constants-browserify": "^1.0.0",
+    "copy-webpack-plugin": "^8.0.0",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.3.0",
+    "html-webpack-plugin": "^5.3.1",
+    "http-browserify": "^1.7.0",
+    "https-browserify": "^1.0.0",
     "jest": "^26.1.0",
+    "lodash-webpack-plugin": "^0.11.6",
+    "path-browserify": "^1.0.1",
     "prismarine-template": "file:.",
-    "standard": "^16.0.1"
+    "process": "^0.11.10",
+    "standard": "^16.0.1",
+    "stream-browserify": "^3.0.0",
+    "timers-browserify": "^2.0.12",
+    "webpack": "^5.27.1",
+    "webpack-dev-middleware": "^4.1.0",
+    "webpack-merge": "^5.7.3",
+    "workbox-webpack-plugin": "^6.1.2"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "net-browserify": "^0.2.4",
+    "prismarine-viewer": "^1.19.0"
   }
 }
